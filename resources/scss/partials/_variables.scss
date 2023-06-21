@@ -1,0 +1,19 @@
+//Color
+$my-dark: #593E2E;
+$my-primary: #F2F2F2;
+$my-light: #AABDBF;
+$my-secondary: #568C4D;
+$my-tertiary: #065903;
+$my-contrast:#5E5B8C;
+$my-dark-blue: #051e34;
+
+//Changing Bootstrap
+    $color-contrast-dark:      $my-light !default;
+    $color-contrast-light:     $my-dark !default;
+    $pagination-color:         $my-dark-blue !default;
+    $pagination-hover-bg:   $my-dark-blue !default;
+    $pagination-focus-bg:   $my-dark-blue !default;
+    $pagination-active-bg: $my-dark-blue !default;
+
+//Text
+$my-font:'Roboto', sans-serif;

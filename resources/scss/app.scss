@@ -1,0 +1,89 @@
+@use './partials/variables' as *;
+
+$fa-font-path: "../fonts/webfonts" !default;
+
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    font-family: $my-font;
+    // color: $my-dark;
+
+}
+.my-logo-img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.ms-bg {
+    background-color: #165bba;
+}
+.ms-fs-xs{
+    font-size: .85rem!important;
+}
+header {
+    height: 50px;
+}
+/* Parte centrale */
+.ms-wrapper {
+    height: calc(100vh - 58px);
+}
+/* Parte centrale latelare */
+#ms-sidebar {
+    width: 50px;
+    background-color: #051e34;
+    // background-image: url("../img/sidebar-bg.png");
+}
+#ms-sidebar li:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+.ms-w-50 {
+    width:50px;
+}
+.ms-h-120px {
+    height: 120px;
+}
+/* Parte centrale principale */
+.ms-small-square {
+    width: 2rem;
+    height: 2rem;
+}
+// Index Project
+.my-table-img{
+    width: 3rem;
+    height: 3rem;
+}
+//height
+.my-150h{
+    height: 150px;
+}
+/* Responsive */
+@media screen and (min-width: 767px){
+    #ms-sidebar, .ms-w-50 {
+        width: 140px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .offcanvas.w-100.offcanvas-end {
+        width: 50%!important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .offcanvas.w-100.offcanvas-end {
+        width: 40%!important;
+    }
+}
+
+//Error pages
+// .page404{
+//     font-size: 4rem;
+//     color: red!important;
+// }
+.text-dark-blue{
+    color: $my-dark-blue;
+}
+.bg-dark-blue{
+    background-color: $my-dark-blue;
+}
